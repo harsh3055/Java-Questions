@@ -1,6 +1,6 @@
 package org.example.Basic;
 
-public class Basic {
+public class dataTypes {
     public static void main(String args[]){
         //primitive date types
         boolean b = true; // 1 byte, 8 bits
