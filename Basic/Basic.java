@@ -19,9 +19,42 @@ public class Basic {
         System.out.println("double: "+ d);
         char c = 'A'; //2 bytes, 16 bits becuase unlike ascii it supoorts unicode
         System.out.println("char: "+c);
-        //non-primitive data types
+        //non-primitive data type
+//string
         String str = "Harsh";
         System.out.println("string: "+ str);
+//class
+        class Car{
+            String model;
+            int year;
 
+            Car(String model, int year){
+                this.model = model;
+                this.year = year;
+            }
+            void display(){
+                System.out.println("Class" + model + " " + year);
+            }
+        }
+
+        Car mycar = new Car("Toyato", 1111);
+        mycar.display();
+//interface
+        interface Animal {
+            void sound();
+        }
+        class Dog implements Animal{
+            public void sound() {
+                System.out.println("bark");
+            }
+        }
+        Dog dog = new Dog();
+        dog.sound();
+//array
+    int num[] = {1,2,3,4,5};
+    String str2[] = {"harsh", "urvashi"};
+
+        System.out.println("first number: " + num[0]);
+        System.out.println("first name: " + num[0]);
     }
 }
