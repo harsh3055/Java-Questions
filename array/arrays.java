@@ -45,7 +45,7 @@ public class arrays {
 
         System.out.println("sum " + sum(arr));
         System.out.println("sum " + sum(m1()));
-
+//copying arrays
         int[] org = {1, 2, 3};
         int[] copy = Arrays.copyOf(org, 5);
         int[] cp = org.clone();
