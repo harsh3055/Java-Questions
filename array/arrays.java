@@ -76,7 +76,16 @@ public class arrays {
                 System.out.print(jaggarr[i][j] + " ");
             System.out.println();
         }
+        vfunc("harsh", "urvashi");
+        System.out.println();
 
+        //final arrays in jva
+        //can be reassigned but not re-referred
+        final int[] finalarr = {1,2,3,4,5};
+        arr[4] = 1;
+        for(int a : finalarr){
+            System.out.println(a + " ");
+        }
     }
     public static int sum(int[] arr){
         int sum = 0;
@@ -87,5 +96,11 @@ public class arrays {
     }
     public static int[] m1(){
         return new int[]{1,2,3,4};
+    }
+    //var args - variable arguments in function
+    public static void vfunc(String... str){
+        for(String s : str){
+            System.out.print(s + " ");
+        }
     }
  }
