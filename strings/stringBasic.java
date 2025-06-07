@@ -39,14 +39,5 @@ public class stringBasic {
 
         }
         System.out.println(org +" "+ rev);
-
-        //String buffer
-        StringBuffer s = new StringBuffer();
-        s.append("hello");
-        s.append(" ");
-        s.append("world");
-
-        String str3 = s.toString();
-        System.out.println(str3);
     }
 }
