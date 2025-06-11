@@ -29,7 +29,7 @@ class Car extends Vehicle {
 }
 public class Abstraction {
     public static void main(String[] args){
-        Car car = new Car();
+        Vehicle car = new Car();
         car.startEngine();
         car.accelerate();
         car.brake();
