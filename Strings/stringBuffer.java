@@ -1,4 +1,4 @@
-package org.example.strings;
+package org.example.Strings;
 
 public class stringBuffer {
     public static void main(String []args){

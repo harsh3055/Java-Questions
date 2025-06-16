@@ -21,7 +21,7 @@ class Student{
                 '}';
     }
 };
-class SortbyRoll implements Comparator<Student>{
+class SortbyRoll implements Comparator<Student>{ //comparator interface used to compare two objects using some data members
     public int compare(Student a, Student b){
         return a.roll_no - b.roll_no;
     }

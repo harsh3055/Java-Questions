@@ -1,4 +1,4 @@
-package org.example.strings;
+package org.example.Strings;
 
 public class stringBuilder {
     public static void main(String[] args){

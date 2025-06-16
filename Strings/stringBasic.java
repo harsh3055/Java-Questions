@@ -1,4 +1,4 @@
-package org.example.strings;
+package org.example.Strings;
 //string is a type of object that can store a sequence of characters
 //every character is stored in 16 bits i.e, UTF 16-bit
 //string is immutable and can not be changed
