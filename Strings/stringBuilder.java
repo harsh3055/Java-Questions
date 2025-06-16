@@ -9,5 +9,6 @@ public class stringBuilder {
         StringBuilder sb = new StringBuilder("harsh goswami");
         sb.append(" urvashi prajapati");
         System.out.println(sb);
+
     }
 }
