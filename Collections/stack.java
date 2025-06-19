@@ -14,7 +14,7 @@ public class stack {
         System.out.println(st.peek());
         System.out.println(st.remove(1));
         System.out.println(st.pop());
-        System.out.println(st.empty());
+        System.out.println(st.isEmpty());
         System.out.println(st.search(1));
         System.out.println(st);
 
