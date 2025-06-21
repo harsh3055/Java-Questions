@@ -25,7 +25,10 @@ public class hashSet {
         while(itr.hasNext())
             System.out.println(itr.next());
 
-        HashSet<Integer> s3 = new HashSet<>(10,7.5f); // after size exceed initial capacity the size increase to initialCapacity*loadFactor
+        HashSet<Integer> s3 = new HashSet<>(10,7.5f);
+        // laod factor means how much hashset required to fill itself before increasing the capacity
+        // loadfactor = number of stored elements/size of hashtable
+
 
 
     }
