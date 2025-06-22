@@ -39,5 +39,8 @@ public class stringBasic {
 
         }
         System.out.println(org +" "+ rev);
+        int a = 66;
+        String as = Integer.toString(a);
+        System.out.println(as);
     }
 }

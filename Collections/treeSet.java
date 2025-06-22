@@ -28,6 +28,8 @@ public class treeSet {
         System.out.println(ts.lower(2));//first < x;
         ts.addAll(Arrays.asList(10,15,20,30));
         System.out.println(ts);
+        System.out.println(ts.first());
+        
 
 
         SortedSet<Integer> greaterelements = ts.tailSet(15, true); //inclusie
