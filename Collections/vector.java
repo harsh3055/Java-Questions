@@ -16,6 +16,7 @@ public class vector {
 
         // Remove the element at index 2
         v.removeElementAt(2);
+        v.removeLast();
 
         // Print the elements of the vector
         for (int i : v) {

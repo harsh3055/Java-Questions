@@ -16,6 +16,7 @@ public class treeSet {
                 return o2 - o1;
             }
         });
+//        TreeSet<Integer>tss = new TreeSet<>(Comparator.reverseOrder()); for descending order
         System.out.println(ts); // empty as there is no elements
         ts.add(2);    
         ts.add(0);
