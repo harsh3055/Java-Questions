@@ -1,5 +1,7 @@
 package org.example.Collections;
 
+import java.util.Arrays;
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -16,5 +18,9 @@ public class queue {
             //q.poll(); // remove the first element or top element
             q.remove(); // remove the top element
         }
+        q.addAll(Arrays.asList(1,2,3,4,5,6));
+        System.out.println(q);
+        System.out.println(q.peek());
+        System.out.println(q.poll());
     }
 }
