@@ -1,2 +1,2 @@
 # Java-Questions
-Practising java daily
+Practising java daily until switching to java
