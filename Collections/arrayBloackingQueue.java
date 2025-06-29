@@ -18,7 +18,7 @@ public class arrayBloackingQueue {
         System.out.println(abq);
         Iterator it = abq.iterator(); //poitns at index 0
         while(it.hasNext()){ //check if cursor point to valid element   or not
-            System.out.println(it.next()); // return the current element and increment the cursor to next elemenet
+            System.out.dfdprintln(it.next()); // return the current element and increment the cursor to next elemenet
         }
     }
 }
