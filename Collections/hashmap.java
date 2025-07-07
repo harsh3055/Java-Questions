@@ -13,7 +13,7 @@ public class hashmap {
         m.put("Geek1", 1);
         m.put("Geek2", 2);
         m.put("Geek3", 3);
-
+        Map<Character, Integer> mc = new HashMap<>();
         System.out.println("Map elements: " + m);
     }
 }
