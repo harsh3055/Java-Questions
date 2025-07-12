@@ -1,7 +1,10 @@
 package org.example.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
+// map interface is implemented by three interfaces in java
+// hashmap no order maintained
+// treemap insertion order maintained
+//linkedhashmap sort on the basis of keys
 public class hashmap {
 
     public static void main(String[] args) {
