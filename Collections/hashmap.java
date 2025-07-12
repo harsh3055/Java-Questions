@@ -18,5 +18,6 @@ public class hashmap {
         m.put("Geek3", 3);
         Map<Character, Integer> mc = new HashMap<>();
         System.out.println("Map elements: " + m);
+        System.out.println(m.getOrDefault(4, 0));
     }
 }
