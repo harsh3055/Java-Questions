@@ -1,6 +1,6 @@
 //functional interface are those interface which only contains one abstract method
 //types of function interfaces are:
-//consumer: one argumnent and no return type accpet
+//consumer: one argument and no return type accept
 //predicate: single argument and return boolean value test
 //function: one argument and return something after processing apply
 //supplier: do not take input but return something get
@@ -15,14 +15,15 @@ public class functionInterface {
         List<String> stri = Arrays.asList("harsh", "hellow", "dudu", "bubu");
 
         // 1. Consumer: one argument, returns nothing
-        Consumer<String> consumer = s -> System.out.println("Consuming: " + s);
+        Consumer<String> consumer = (s) -> System.out.println("Consuming: " + s);
         System.out.println("\nConsumer output:");
         for (String str : stri) {
             consumer.accept(str);
         }
 
         // 2. Predicate: one argument, returns boolean
-        Predicate<String> p = s -> s.startsWith("h");
+        Predicate<String> p;
+        p = (s) -> s.startsWith("h");
         System.out.println("Strings starting with 'h':");
         for (String str : stri) {
             if (p.test(str)) {
@@ -30,9 +31,8 @@ public class functionInterface {
             }
         }
 
-
         // 3. Function: one argument, returns processed value
-        Function<String, Integer> function = s -> s.length();
+        Function<String, Integer> function = (s) -> s.length();
         System.out.println("\nFunction output (String lengths):");
         for (String str : stri) {
             System.out.println("Length of " + str + ": " + function.apply(str));

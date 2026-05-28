@@ -31,7 +31,7 @@ public class comparator {
         ArrayList<Student> students= new ArrayList<Student>();
         students.add(new Student(27, "harsh"));
         students.add(new Student(15, "urvashi"));
-        Collections.sort(students, new SortbyRoll());
+        Collections.sort(students, new SortbyRoll().reversed());
         for(Student s : students){
             System.out.println(s);
         }

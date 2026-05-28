@@ -1,8 +1,26 @@
 package org.example.Basic;
 
 public class dataTypes {
+
+    static void print()
+    {
+        System.out.println("hello");
+    }
+
+    public void print1(){
+        System.out.println("hello 2");
+    }
+     int i = 7;
+
     public static void main(String args[]){
         //primitive date types
+
+        print();
+
+        dataTypes obj = new dataTypes();
+        obj.print1();
+        obj.i++;
+
         boolean b = true; // 1 byte, 8 bits
         System.out.println("boolean: " + b);
         byte a = 25; // 1 byte, 8 bits
@@ -35,10 +53,18 @@ public class dataTypes {
             void display(){
                 System.out.println("Class" + model + " " + year);
             }
+
+            @Override
+            public String toString() {
+                return "Car{" +
+                        "model='" + model + '\'' +
+                        ", year=" + year +
+                        '}';
+            }
         }
 
         Car mycar = new Car("Toyato", 1111);
-        mycar.display();
+        System.out.println(mycar.toString());
 //interface
         interface Animal {
             void sound();

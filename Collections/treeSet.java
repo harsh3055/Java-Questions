@@ -4,10 +4,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
-//treeset doesnot allow duplicate elements any insertion of duplicate elements will be ignored
+//treeset doesn't allow duplicate elements any insertion of duplicate elements will be ignored
 //it doesn't allow duplicate elements
 // it used red black tree internally
-// red black tress balance itself so that height of tree always reaming ologn making sure all the operation take this much time
+// red black tress balance itself so that height of tree always remains ologn making sure all the operation take this much time
 public class treeSet {
     public static void main(String[] args) {
         TreeSet<Integer> ts = new TreeSet<>(new Comparator<Integer>() {

@@ -18,7 +18,7 @@ public class basicClass {
         System.out.println("inside print function");
     }
 
-    public static void main(String []args){
+public static void main(String []args){
 
 //inside same class method
     basicClass b = new basicClass();

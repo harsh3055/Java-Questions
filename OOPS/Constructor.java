@@ -1,18 +1,23 @@
 package org.example.OOPS;
 
-public class Constructor {
+
+public class Constructor implements Cloneable{
         int a;
         String name;
         //default constructor it provide the defult values like 0 or null.
         Constructor(){
             System.out.println("default constructor");
         }
-        Constructor(int a, String name){
+        Constructor(int a, String name){ // parametrized constructor
+            this(a);// while doing chaining always call it first
             this.a = a;
             if (name == null) throw new IllegalArgumentException("Name cannot be null");
             this.name = name;
+
         }
-        Constructor(Constructor c){
+        Constructor(int a){System.out.println("Constructor chaining: " + a);}
+
+        Constructor(Constructor c){ //copy constructor
             this.a = c.a;
             this.name = c.name;
         }
@@ -35,8 +40,16 @@ public class Constructor {
         Constructor other = (Constructor) o;
         return this.a == other.a && this.name.equals(other.name);
     }
-
-
+    @Override
+    public Constructor clone() {
+        try {
+            Constructor copy = (Constructor) super.clone();
+            copy.name = new String(this.name); // defensive copy
+            return copy;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 
     public static void main(String[] args) {
         Constructor c = new Constructor(); //default constructor
@@ -46,8 +59,16 @@ public class Constructor {
         System.out.println(c1.toString());
 
         Constructor c2 = new Constructor(c1); //copy constructor
+        Constructor c3 = c2.clone(); //deep copy
+//        c1.name = "tingi";
+//        c2.name = "hello";
+//        c3.name = "vii";
+        System.out.println(c1.name.equals(c2.name));
+        System.out.println(c1.toString());
         System.out.println(c2.toString());
+        System.out.println(c3.toString());
 
         System.out.println(c1.equals(c2));
     }
 }
+

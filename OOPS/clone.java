@@ -11,7 +11,8 @@ public class clone implements Cloneable{
         clone c1 = new clone();
         try {
             clone c2 = (clone)c1.clone();
-
+//            clone c2 = c1;
+            c2.name = "urvashi";
             System.out.println(c2.name + c1.name);
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
