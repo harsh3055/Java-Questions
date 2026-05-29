@@ -3,9 +3,17 @@ package org.example.OOPS;
 // Method Overloading and Overriding
 
 // Parent Class
+
+//Dynamic Method Dispatch is the process where an overridden
+// method call is resolved at runtime based on the actual object type rather than the reference type.
+// it does not work on static method because they have early binding. private methods final methods constructors
+
+//Dynamic dispatch in C++ is achieved using virtual functions, where the function call is
+//resolved at runtime through vtables and vptrs based on the actual object type.
+
 class Parent {
     // Overloaded method (compile-time polymorphism)
-    public void func() {
+       void func() {
         System.out.println("Parent.func()");
     }
 
@@ -18,7 +26,7 @@ class Parent {
 // Child Class
 class Child extends Parent {
     // Overrides Parent.func(int) (runtime polymorphism)
-    @Override
+//    @Override
     public void func(int a) {
         System.out.println("Child.func(int): " + a);
     }
@@ -30,6 +38,9 @@ public class Polymorphism {
         Child child = new Child();
         //dynamic dispatch
         Parent polymorphicObj = new Child();
+        //in cpp vptr -----> child vtable
+        //                    |
+        //                    ---> child::func()
 
         //method overloading
         parent.func();
@@ -39,7 +50,8 @@ public class Polymorphism {
         child.func(30);
 
         //polymorphism in action
-        polymorphicObj.func(40);
+        polymorphicObj.func(40); //dynamic dispath, reference type is parent, object type is child
+
 
     }
 }

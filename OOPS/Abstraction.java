@@ -2,6 +2,19 @@ package org.example.OOPS;
 // Data Abstraction is the property by virtue of
 // which only the essential details are displayed to the user
 // Abstract class representing a Vehicle (hiding implementation details)
+//Abstract Class → "IS-A"
+//Represents a hierarchy.
+
+//Dog IS-A Animal
+//Car IS-A Vehicle
+//Interface → "CAN-DO"
+//Represents capability/behavior.
+
+//Upi can do payment
+//credit card can do payment
+
+
+
 abstract class Vehicle {
     // Abstract methods (what it can do)
     abstract void accelerate();
