@@ -38,7 +38,7 @@ public class Polymorphism {
         Child child = new Child();
         //dynamic dispatch
         Parent polymorphicObj = new Child();
-        //in cpp vptr -----> child vtable
+        //in c++ vptr -----> child vtable
         //                    |
         //                    ---> child::func()
 

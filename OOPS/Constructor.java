@@ -1,6 +1,6 @@
 package org.example.OOPS;
 
-
+// super() and this() can not be used in same constructor and both should always be on first line
 public class Constructor implements Cloneable{
         int a;
         String name;
@@ -9,7 +9,7 @@ public class Constructor implements Cloneable{
             System.out.println("default constructor");
         }
         Constructor(int a, String name){ // parametrized constructor
-            this(a);// while doing chaining always call it first
+            this(a); // while doing chaining always call it first
             this.a = a;
             if (name == null) throw new IllegalArgumentException("Name cannot be null");
             this.name = name;
@@ -48,6 +48,8 @@ public class Constructor implements Cloneable{
             return copy;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
+        }finally { //even though you are retuning in try finally still will run;
+            System.out.println("Inside finally");
         }
     }
 
